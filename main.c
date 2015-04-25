@@ -24,7 +24,7 @@ int main(int arrgc,char *argv[])
 		exit(1);
 	}else 
 				printf("Program will run silently.\nAnd the log is in ./run.log.\n");	
-//				init_d();	
+				init_d();	
 				
 				while(1){
                 if(server(80,"42.96.164.52","api.yeelink.net",USERAPIKEY,DEVICE_NUMBER,DEVICE_SENSOR,"GET","",1,str1)!=0) return -1;
@@ -40,7 +40,7 @@ int main(int arrgc,char *argv[])
 				else ;
 		}
 				printf("%s\n",str);
-/*				if(fprintf(logfp,"%s",str)<0) {
+				if(fprintf(logfp,"%s",str)<0) {
 		fclose(logfp);
 		logfp=fopen("error.log","wt+");
 		fprintf(logfp,"ERROR! %s",ctime(&timep));
@@ -48,7 +48,7 @@ int main(int arrgc,char *argv[])
 		exit(1);
 }
                 //return 0;
-*/
+
                 }
 
 			fclose(logfp);
