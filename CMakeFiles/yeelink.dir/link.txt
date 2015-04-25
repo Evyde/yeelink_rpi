@@ -1,1 +1,0 @@
-/usr/bin/gcc  -lwiringPi    CMakeFiles/yeelink.dir/main.c.o  -o yeelink -rdynamic server/libserver.a LED/libLED.a tools/libstr.a tools/libinit_d.a 

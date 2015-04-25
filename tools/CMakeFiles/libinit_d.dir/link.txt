@@ -1,2 +1,0 @@
-/usr/bin/ar cr libinit_d.a  CMakeFiles/libinit_d.dir/init_d.c.o
-/usr/bin/ranlib libinit_d.a

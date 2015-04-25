@@ -1,2 +1,0 @@
-/usr/bin/ar cr libstr.a  CMakeFiles/libstr.dir/str.c.o
-/usr/bin/ranlib libstr.a
