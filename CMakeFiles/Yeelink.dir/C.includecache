@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/yeelink_rpic/LED/LED.h
+
+/home/pi/yeelink_rpic/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+sys/types.h
+-
+unistd.h
+-
+server/server.h
+/home/pi/yeelink_rpic/server/server.h
+LED/LED.h
+/home/pi/yeelink_rpic/LED/LED.h
+tools/tools.h
+/home/pi/yeelink_rpic/tools/tools.h
+
+/home/pi/yeelink_rpic/server/server.h
+
+/home/pi/yeelink_rpic/tools/tools.h
+

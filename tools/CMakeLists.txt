@@ -1,0 +1,6 @@
+set(LIB_SRC str.c)
+add_library(libstr ${LIB_SRC})
+set_target_properties(libstr PROPERTIES OUTPUT_NAME "str")
+set(LIB_SRC init_d.c)
+add_library(libinit_d ${LIB_SRC})
+set_target_properties(libinit_d PROPERTIES OUTPUT_NAME "init_d")

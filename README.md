@@ -1,5 +1,10 @@
 # yeelink_rpi
 #本程序为树莓派专用，使用前请安装wiringPi库。
+#或修改LED/LED.c来实现平台移植
+#项目使用cmake构建。
+#
+#####Pay attention:IT IS A ERROR VERSION!#####
+#
 #在树莓派B+测试
 #main.c:
 #	主程序

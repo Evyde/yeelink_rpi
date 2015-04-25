@@ -1,0 +1,5 @@
+/home/pi/yeelink_rpic/CMakeFiles/Yeelink.dir
+/home/pi/yeelink_rpic/LED/CMakeFiles/libLED.dir
+/home/pi/yeelink_rpic/tools/CMakeFiles/libinit_d.dir
+/home/pi/yeelink_rpic/server/CMakeFiles/libserver.dir
+/home/pi/yeelink_rpic/tools/CMakeFiles/libstr.dir

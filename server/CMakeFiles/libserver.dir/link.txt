@@ -1,0 +1,2 @@
+/usr/bin/ar cr libserver.a  CMakeFiles/libserver.dir/server.c.o
+/usr/bin/ranlib libserver.a

@@ -69,14 +69,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/yeelink_rpic/CMakeFiles /home/pi/yeelink_rpic/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/pi/yeelink_rpic && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/yeelink_rpic/CMakeFiles /home/pi/yeelink_rpic/tools/CMakeFiles/progress.marks
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/yeelink_rpic/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/clean
 .PHONY : clean
 
 # The main clean target
@@ -85,107 +85,94 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/yeelink_rpic && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Yeelink
+# Convenience name for target.
+tools/CMakeFiles/libinit_d.dir/rule:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/libinit_d.dir/rule
+.PHONY : tools/CMakeFiles/libinit_d.dir/rule
 
-# Build rule for target.
-Yeelink: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Yeelink
-.PHONY : Yeelink
-
-# fast build rule for target.
-Yeelink/fast:
-	$(MAKE) -f CMakeFiles/Yeelink.dir/build.make CMakeFiles/Yeelink.dir/build
-.PHONY : Yeelink/fast
-
-#=============================================================================
-# Target rules for targets named libserver
-
-# Build rule for target.
-libserver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libserver
-.PHONY : libserver
-
-# fast build rule for target.
-libserver/fast:
-	$(MAKE) -f server/CMakeFiles/libserver.dir/build.make server/CMakeFiles/libserver.dir/build
-.PHONY : libserver/fast
-
-#=============================================================================
-# Target rules for targets named libLED
-
-# Build rule for target.
-libLED: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libLED
-.PHONY : libLED
-
-# fast build rule for target.
-libLED/fast:
-	$(MAKE) -f LED/CMakeFiles/libLED.dir/build.make LED/CMakeFiles/libLED.dir/build
-.PHONY : libLED/fast
-
-#=============================================================================
-# Target rules for targets named libinit_d
-
-# Build rule for target.
-libinit_d: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libinit_d
+# Convenience name for target.
+libinit_d: tools/CMakeFiles/libinit_d.dir/rule
 .PHONY : libinit_d
 
 # fast build rule for target.
 libinit_d/fast:
-	$(MAKE) -f tools/CMakeFiles/libinit_d.dir/build.make tools/CMakeFiles/libinit_d.dir/build
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libinit_d.dir/build.make tools/CMakeFiles/libinit_d.dir/build
 .PHONY : libinit_d/fast
 
-#=============================================================================
-# Target rules for targets named libstr
+# Convenience name for target.
+tools/CMakeFiles/libstr.dir/rule:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f CMakeFiles/Makefile2 tools/CMakeFiles/libstr.dir/rule
+.PHONY : tools/CMakeFiles/libstr.dir/rule
 
-# Build rule for target.
-libstr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libstr
+# Convenience name for target.
+libstr: tools/CMakeFiles/libstr.dir/rule
 .PHONY : libstr
 
 # fast build rule for target.
 libstr/fast:
-	$(MAKE) -f tools/CMakeFiles/libstr.dir/build.make tools/CMakeFiles/libstr.dir/build
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libstr.dir/build.make tools/CMakeFiles/libstr.dir/build
 .PHONY : libstr/fast
 
-main.o: main.c.o
-.PHONY : main.o
+init_d.o: init_d.c.o
+.PHONY : init_d.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Yeelink.dir/build.make CMakeFiles/Yeelink.dir/main.c.o
-.PHONY : main.c.o
+init_d.c.o:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libinit_d.dir/build.make tools/CMakeFiles/libinit_d.dir/init_d.c.o
+.PHONY : init_d.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+init_d.i: init_d.c.i
+.PHONY : init_d.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Yeelink.dir/build.make CMakeFiles/Yeelink.dir/main.c.i
-.PHONY : main.c.i
+init_d.c.i:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libinit_d.dir/build.make tools/CMakeFiles/libinit_d.dir/init_d.c.i
+.PHONY : init_d.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+init_d.s: init_d.c.s
+.PHONY : init_d.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Yeelink.dir/build.make CMakeFiles/Yeelink.dir/main.c.s
-.PHONY : main.c.s
+init_d.c.s:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libinit_d.dir/build.make tools/CMakeFiles/libinit_d.dir/init_d.c.s
+.PHONY : init_d.c.s
+
+str.o: str.c.o
+.PHONY : str.o
+
+# target to build an object file
+str.c.o:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libstr.dir/build.make tools/CMakeFiles/libstr.dir/str.c.o
+.PHONY : str.c.o
+
+str.i: str.c.i
+.PHONY : str.i
+
+# target to preprocess a source file
+str.c.i:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libstr.dir/build.make tools/CMakeFiles/libstr.dir/str.c.i
+.PHONY : str.c.i
+
+str.s: str.c.s
+.PHONY : str.s
+
+# target to generate assembly for a file
+str.c.s:
+	cd /home/pi/yeelink_rpic && $(MAKE) -f tools/CMakeFiles/libstr.dir/build.make tools/CMakeFiles/libstr.dir/str.c.s
+.PHONY : str.c.s
 
 # Help Target
 help:
@@ -193,16 +180,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Yeelink"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... libserver"
-	@echo "... libLED"
 	@echo "... libinit_d"
 	@echo "... libstr"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... rebuild_cache"
+	@echo "... init_d.o"
+	@echo "... init_d.i"
+	@echo "... init_d.s"
+	@echo "... str.o"
+	@echo "... str.i"
+	@echo "... str.s"
 .PHONY : help
 
 
@@ -214,6 +201,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/yeelink_rpic && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

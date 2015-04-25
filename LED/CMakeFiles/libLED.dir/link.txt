@@ -1,0 +1,2 @@
+/usr/bin/ar cr libLED.a  CMakeFiles/libLED.dir/LED.c.o
+/usr/bin/ranlib libLED.a
