@@ -14,7 +14,7 @@
 
 int main(int arrgc,char *argv[])
         {
-                char str1[2048],a[5],str[100];
+                char str1[4096],a[5],str[100];
 				int i;
 				time_t timep;
 				FILE *logfp=NULL;
