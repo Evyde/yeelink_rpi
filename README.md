@@ -9,24 +9,6 @@
 #即不产生log。#
 ###
 ###在树莓派B+测试
-###目录结构：
-###|----main.c
-###|----CMakeLists.txt
-###|----LICENSE
-###|----README.md
-###|---/tools/
-###|----------str.c
-###|----------init_d.c
-###|----------tools.h
-###|----------CMakeLists.txt
-###|---/server/
-###|----------server.c
-###|----------server.h
-###|----------CMakeLists.txt
-###|---/LED/
-###|----------LED.c
-###|----------LED.h
-###|----------CMakeLists.txt
 ###
 ###编译、运行方法：
 ###进入目录。
@@ -36,6 +18,29 @@
 ###编译链接
 ###可以通过make help查看帮助
 ###运行sudo ./Yeelink，程序进入后台，并接收服务器消息，控制led闪烁
+###
+###目录结构：
+###Yeelink_rpi
+###├── CMakeLists.txt
+###├── LED
+###│   ├── CMakeLists.txt
+###│   ├── LED.c
+###│   └── LED.h
+###├── LICENSE
+###├── main.c
+###├── README.md
+###├── server
+###│   ├── CMakeLists.txt
+###│   ├── server.c
+###│   └── server.h
+###└── tools
+###    ├── CMakeLists.txt
+###    ├── init_d.c
+###    ├── str.c
+###    └── tools.h
+###
+###3 directories, 14 files
+###
 ###作者：ForeverOpp
 ###life.app.hanfeng@hotmail.com
 ###hanfeng@isyzx.com
